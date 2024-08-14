@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Important for Exam </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .container button {
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
+        .instructions {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .instructions h1 {
+            color: #d9534f;
+            font-size: 24px;
+        }
+        .instructions p, .instructions li {
+            font-size: 16px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fahujacareerinstitute.com%2FAhuja%2520Logo.png&tbnid=NZ1Dn5PU6qcOcM&vet=12ahUKEwiKktH2ifSHAxXkg2MGHesbMcIQMygZegUIARCIAQ..i&imgrefurl=https%3A%2F%2Fahujacareerinstitute.com%2F&docid=DknvbVjql8UvCM&w=776&h=255&q=ahuja%20career%20institute&ved=2ahUKEwiKktH2ifSHAxXkg2MGHesbMcIQMygZegUIARCIAQ" alt="Ahuja Career Institute Logo">
+        <p>Important Questions for Tomorrow's Exam</p>
+        <button onclick="showInstructions()">Click here for it</button>
+        <div class="instructions">
+            <h1>Important  for Tomorrow's Exam</h1>
+            <p>Attention, students! 🚨</p>
+            <ol>
+                <li><strong>Attendance is Mandatory:</strong>
+                    <ul>
+                        <li>Do not remain absent without informing us or without any valid reason.</li>
+                        <li>If you are absent without a valid reason, you will be required to submit the written paper twice.</li>
+                    </ul>
+                </li>
+                <li><strong>Exam Format and Requirements:</strong>
+                    <ul>
+                        <li><strong>Part A:</strong>
+                            <ul>
+                                <li>Contains 50 MCQs.</li>
+                                <li>If you score less than 30, you must write the MCQs one time.</li>
+                                <li>If you score less than 20, you must write the MCQs two times.</li>
+                                <li>If you score less than 10, you must write the MCQs three times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Part B:</strong>
+                            <ul>
+                                <li>Similar rules apply as in Part A.</li>
+                                <li>Less than 30: Write the questions one time.</li>
+                                <li>Less than 20: Write the questions two times.</li>
+                                <li>Less than 10: Write the questions three times.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Preparation:</strong>
+                    <ul>
+                        <li>Ensure you come to the exam well-prepared.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Stay tuned, as the schedule for tomorrow will be updated super soon.</p>
+            <p>Good luck, and see you all tomorrow! 💪📚</p>
+            <p>Best regards,</p>
+            <p>[Ahuja Career Institute]</p>
+        </div>
+    </div>
+
+    <script>
+        function showInstructions() {
+            document.querySelector('.instructions').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
