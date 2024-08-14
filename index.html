@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Important for Tomorrow's Exam</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(to right, #00c6ff, #0072ff);
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,10 +19,12 @@
         .container {
             text-align: center;
             background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            max-width: 700px;
+            max-width: 90%;
+            width: 100%;
+            margin: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,6 +38,15 @@
             max-width: 150px;
             margin-bottom: 20px;
         }
+        .container p, .container button {
+            margin-top: 10px;
+        }
+        .warning {
+            font-size: 20px;
+            color: #ff6347;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
         .container button {
             font-size: 20px;
             color: #ffffff;
@@ -43,7 +56,6 @@
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
         }
         .container button:hover {
             background-color: #e84118;
@@ -52,6 +64,7 @@
             display: none;
             text-align: left;
             margin-top: 20px;
+            width: 100%;
         }
         .instructions h1 {
             color: #e84118;
@@ -75,6 +88,7 @@
     <div class="container">
         <img src="Ahuja Logo.png" alt="Ahuja Career Institute Logo">
         <p style="font-size: 24px; font-weight: bold;">Important Questions for Tomorrow's Exam</p>
+        <p class="warning">Click the button below, otherwise, you might regret it after the exam! 😱</p>
         <button onclick="showInstructions()">Click here for Imp Questions</button>
         <div class="instructions">
             <h1>Important for Tomorrow's Exam</h1>
@@ -124,6 +138,7 @@
         function showInstructions() {
             document.querySelector('.instructions').style.display = 'block';
             document.querySelector('.container button').style.display = 'none';
+            document.querySelector('.warning').style.display = 'none';
         }
     </script>
 </body>
