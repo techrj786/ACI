@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #333;
+            overflow: hidden; /* Hide overflow on body */
         }
         .container {
             text-align: center;
@@ -22,13 +22,14 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            max-width: 100%;
+            max-width: 90%;
             width: 100%;
             box-sizing: border-box;
             margin: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: auto; /* Enable scrolling inside container */
             transition: transform 0.3s ease-in-out;
         }
         .container:hover {
@@ -156,6 +157,7 @@
             document.querySelector('.instructions').style.display = 'block';
             document.querySelector('.container button').style.display = 'none';
             document.querySelector('.warning').style.display = 'none';
+            document.querySelector('.container').style.overflow = 'scroll'; // Enable scroll after showing instructions
         }
     </script>
 </body>
