@@ -4,41 +4,49 @@
     <title>Important for Tomorrow's Exam</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             margin: 0;
             padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: #333;
         }
         .container {
             text-align: center;
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.05);
         }
         .container img {
-            width: 150;
+            width: auto;
+            max-width: 150px;
             margin-bottom: 20px;
         }
         .container button {
-            font-size: 18px;
+            font-size: 20px;
             color: #ffffff;
-            background-color: #007bff;
+            background-color: #ff4757;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
         .container button:hover {
-            background-color: #0056b3;
+            background-color: #e84118;
         }
         .instructions {
             display: none;
@@ -46,18 +54,18 @@
             margin-top: 20px;
         }
         .instructions h1 {
-            color: #d9534f;
-            font-size: 24px;
+            color: #e84118;
+            font-size: 26px;
         }
         .instructions p, .instructions li {
-            font-size: 16px;
+            font-size: 18px;
         }
         .instructions ol {
             padding-left: 20px;
         }
         .surprise {
-            color: #28a745;
-            font-size: 20px;
+            color: #2ed573;
+            font-size: 22px;
             text-align: center;
             margin-top: 20px;
         }
@@ -66,8 +74,8 @@
 <body>
     <div class="container">
         <img src="Ahuja Logo.png" alt="Ahuja Career Institute Logo">
-        <p><h1>Important Questions for Tomorrow's Exam</h1></p>
-        <button onclick="showInstructions()"> Click here for Imp Questions </button>
+        <p style="font-size: 24px; font-weight: bold;">Important Questions for Tomorrow's Exam</p>
+        <button onclick="showInstructions()">Click here for Imp Questions</button>
         <div class="instructions">
             <h1>Important for Tomorrow's Exam</h1>
             <p>Attention, students! 🚨</p>
@@ -108,7 +116,7 @@
             <p>Good luck, and see you all tomorrow! 💪📚</p>
             <p>Best regards,</p>
             <p>[Ahuja Career Institute]</p>
-            <p class="surprise"><h2>How's the IMP? 😄🎉</h2></p>
+            <p class="surprise"><h2>How's the surprise? 😄🎉</h2></p>
         </div>
     </div>
 
